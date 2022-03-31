@@ -1,7 +1,10 @@
+""" Program for generating score """
+
 import random
 
 
 def main():
+    """ Get score and print grade """
     score = float(input("Enter your score: "))
     grade = determine_grade(score)
     print(grade)
@@ -13,6 +16,7 @@ def main():
 
 
 def determine_grade(score):
+    """ Determine grade """
     if score < 0 or score > 100:
         return "Invalid score"
     elif score >= 90:
