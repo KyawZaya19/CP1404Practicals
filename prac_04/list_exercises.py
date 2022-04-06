@@ -19,23 +19,7 @@ else:
     print("Access denied")
 
 
-# 3 List comprehension
-full_names = ["Bob Martin", "Angel Harlem", "Jimi Hendrix", "Alan Turing",
-              "Ada Lovelace"]
 
-#  list of full_names in lowercase
-lowercase_full_names = [name.lower() for name in full_names]
-print(lowercase_full_names)
-
-almost_numbers = ['0', '10', '21', '3', '-7', '88', '9']
-#  list of integers
-numbers = [int(almost_number) for almost_number in almost_numbers]
-print(numbers)
-
-
-#  list of only the numbers that are greater than 9 from the numbers above
-greater_numbers = [number for number in numbers if number > 9]
-print(greater_numbers)
 
 
 
