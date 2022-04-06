@@ -27,6 +27,7 @@ def get_data():
 
 
 def display_subject_details(subject_details):
+    """ Print the subject details neatly """
     for subject_detail in subject_details:
         print(f"{subject_detail[0]} is taught by {subject_detail[1]:13} and has {subject_detail[2]:4} students")
 
