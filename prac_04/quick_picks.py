@@ -5,6 +5,7 @@ MIN_NUMBER = 1
 
 
 def main():
+    """ Program for quick pick of a set of random numbers"""
     quick_picks = int(input("How many quick picks? "))
     while quick_picks < 0:
         print("Invalid")
