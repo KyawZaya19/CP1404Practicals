@@ -1,3 +1,5 @@
+""" Program for testing guitar class """
+
 from prac_06.guitar import Guitar
 
 

@@ -1,7 +1,10 @@
+""" Guitar program """
+
 from prac_06.guitar import Guitar
 
 
 def main():
+    """ Guitar program with using class"""
     guitars = []
     print("My guitars!")
     name = input("Name: ")
