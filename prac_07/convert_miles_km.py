@@ -16,18 +16,18 @@ class MilesConverter(App):
         return self.root
 
     def handle_calculate(self, text):
-        miles = self.convert_to_number(text)
-        self.update_result(miles)
+        miles = self.convert_to_float(text)
+        self.result(miles)
 
     def handle_increment(self, text, change):
-        miles = self.convert_to_number(text) + change
+        miles = self.convert_to_float(text) + change
         self.root.ids.input_miles.text = str(miles)
 
-    def update_result(self, miles):
+    def result(self, miles):
         self.output_km = str(miles * 1.60934)
 
     @staticmethod
-    def convert_to_number(text):
+    def convert_to_float(text):
         try:
             return float(text)
         except ValueError:
