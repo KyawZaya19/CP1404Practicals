@@ -6,6 +6,8 @@ from kivy.app import App
 from kivy.lang import Builder
 from kivy.properties import StringProperty
 
+FACTOR_MILES_TO_KM = 1.60934
+
 
 class MilesConverter(App):
     """Kivy App for converting miles to kilometres"""
@@ -29,7 +31,7 @@ class MilesConverter(App):
 
     def result(self, miles):
         """Calculating result and change it into string"""
-        self.output_km = str(miles * 1.60934)
+        self.output_km = str(miles * FACTOR_MILES_TO_KM)
 
     @staticmethod
     def convert_to_float(text):
