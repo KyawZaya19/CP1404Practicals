@@ -49,7 +49,7 @@ def main():
 def display_taxis(taxis):
     """Display the list of taxis."""
     for i, taxi in enumerate(taxis):
-        print("{} - {}".format(i, taxi))
+        print(f"{i} - {taxi}")
 
 
 main()
