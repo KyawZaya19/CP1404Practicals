@@ -7,6 +7,11 @@ import os
 
 
 def main():
+    print("Starting directory is: {}".format(os.getcwd()))
+
+    # Change to desired directory
+    os.chdir('Lyrics/Christmas')
+
     os.chdir('Lyrics')
     for directory_name, subdirectories, filenames in os.walk('.'):
         print("Directory:", directory_name)
