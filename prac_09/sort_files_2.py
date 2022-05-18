@@ -6,6 +6,7 @@ import os
 
 
 def main():
+    """Moving files based on user's categorisation"""
     extension_to_category = {}
     os.chdir("FilesToSort")
     for filename in os.listdir('.'):
